@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "F67xexoMo30r7YgL1p4Ywx9Ghc6uzcRwoc9YfizrFnRbKUnKcXUtTp2rV0xR5rSZ1F5+4vgXMuUxHas6bVSN1Q==",
+  "success": true,
+  "projectFilePath": "/home/tashik/Desktop/desktop/Infrastructure-as-Code-IaC/api/api/api.csproj",
+  "expectedPackageFiles": [
+    "/home/tashik/.nuget/packages/microsoft.extensions.apidescription.server/3.0.0/microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "/home/tashik/.nuget/packages/microsoft.openapi/1.2.3/microsoft.openapi.1.2.3.nupkg.sha512",
+    "/home/tashik/.nuget/packages/swashbuckle.aspnetcore/5.6.3/swashbuckle.aspnetcore.5.6.3.nupkg.sha512",
+    "/home/tashik/.nuget/packages/swashbuckle.aspnetcore.swagger/5.6.3/swashbuckle.aspnetcore.swagger.5.6.3.nupkg.sha512",
+    "/home/tashik/.nuget/packages/swashbuckle.aspnetcore.swaggergen/5.6.3/swashbuckle.aspnetcore.swaggergen.5.6.3.nupkg.sha512",
+    "/home/tashik/.nuget/packages/swashbuckle.aspnetcore.swaggerui/5.6.3/swashbuckle.aspnetcore.swaggerui.5.6.3.nupkg.sha512"
+  ],
+  "logs": []
+}
