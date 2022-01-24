@@ -39,8 +39,33 @@ msbuild.wrn
 *.o
 *.so
 
+
+
 # Terraform
+
+# Local .terraform directories
+**/.terraform/*
+
 .terraform
 terraform.tfvars
-terraform.tfstate
-terraform.tfstate.backup
+*.tfvars
+*.tfstate
+*.tfstate.*
+
+
+# Ignore override files as they are usually used to override resources locally and so
+# are not checked in
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+
+# Crash log files
+crash.log
+crash.*.log
+
+
+# Ignore CLI configuration files
+.terraformrc
+terraform.rc
