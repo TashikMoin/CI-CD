@@ -43,7 +43,7 @@ stages:
           # The input false and auto approve flag eliminates the interaction with the cli.
           - script: |
               set -e
-              terraform init -input=false
+              terraform init -input=false -backend-config=backend.conf
               terraform apply -input=false -auto-approve
             name: "RunTerraform"
             displayName: "Run Terraform"
