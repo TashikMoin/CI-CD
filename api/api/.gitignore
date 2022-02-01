@@ -40,6 +40,9 @@ msbuild.wrn
 *.so
 
 
+# other configuration files
+backend.conf
+
 
 # Terraform
 

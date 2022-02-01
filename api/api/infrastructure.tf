@@ -1,12 +1,41 @@
 
+variable "ARM_CLIENT_ID" {
+
+}
+
+variable "ARM_CLIENT_SECRET" {
+
+}
+
+variable "ARM_TENANT_ID" {
+
+}
+
+variable "ARM_SUBSCRIPTION_ID" {
+
+}
+
+variable "imagetag" {
+  type        = string
+  description = "Latest build using the latest image tag."
+}
+
+
 terraform {
+
+  backend "azurerm" {}
+
   required_providers {
     azurerm = {
       source  = "hashicorp/azurerm"
-      version = "2.91.0"
+      version = "=2.91.0"
     }
   }
+
 }
+
+
+
 
 provider "azurerm" {
   features {}
@@ -31,7 +60,7 @@ resource "azurerm_container_group" "local-container-group" {
 
   container {
     name   = "api-container"
-    image  = "tashikmoin/iac"
+    image  = "tashikmoin/iac:${imagetag}"
     cpu    = 1
     memory = 1
     ports {
@@ -41,18 +70,3 @@ resource "azurerm_container_group" "local-container-group" {
   }
 }
 
-variable "ARM_CLIENT_ID" {
-
-}
-
-variable "ARM_CLIENT_SECRET" {
-
-}
-
-variable "ARM_TENANT_ID" {
-
-}
-
-variable "ARM_SUBSCRIPTION_ID" {
-
-}
