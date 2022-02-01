@@ -60,7 +60,7 @@ resource "azurerm_container_group" "local-container-group" {
 
   container {
     name   = "api-container"
-    image  = "tashikmoin/iac:${var.imagetag}"
+    image  = "tashikmoin/cicd:${var.imagetag}"
     cpu    = 1
     memory = 1
     ports {
