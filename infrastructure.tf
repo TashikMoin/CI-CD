@@ -1,4 +1,4 @@
-
+# NOTE: uncomment all resource blocks to provision the infrastructure and comment them to stop billing.
 variable "ARM_CLIENT_ID" {
 
 }
@@ -45,28 +45,28 @@ provider "azurerm" {
   tenant_id       = var.ARM_TENANT_ID
 }
 
-resource "azurerm_resource_group" "local-terraform-rg" {
-  name     = "terraform-rg"
-  location = "uaenorth"
-}
+# resource "azurerm_resource_group" "local-terraform-rg" {
+#   name     = "terraform-rg"
+#   location = "uaenorth"
+# }
 
-resource "azurerm_container_group" "local-container-group" {
-  name                = "api-container"
-  location            = azurerm_resource_group.local-terraform-rg.location
-  resource_group_name = azurerm_resource_group.local-terraform-rg.name
-  ip_address_type     = "public"
-  dns_name_label      = "iac-api"
-  os_type             = "Linux"
+# resource "azurerm_container_group" "local-container-group" {
+#   name                = "api-container"
+#   location            = azurerm_resource_group.local-terraform-rg.location
+#   resource_group_name = azurerm_resource_group.local-terraform-rg.name
+#   ip_address_type     = "public"
+#   dns_name_label      = "iac-api"
+#   os_type             = "Linux"
 
-  container {
-    name   = "api-container"
-    image  = "tashikmoin/cicd:${var.imagetag}"
-    cpu    = 1
-    memory = 1
-    ports {
-      port     = 80
-      protocol = "TCP"
-    }
-  }
-}
+#   container {
+#     name   = "api-container"
+#     image  = "tashikmoin/cicd:${var.imagetag}"
+#     cpu    = 1
+#     memory = 1
+#     ports {
+#       port     = 80
+#       protocol = "TCP"
+#     }
+#   }
+# }
 
