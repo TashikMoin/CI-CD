@@ -1,4 +1,4 @@
-uncommit the file to provision the infrastructure
+# uncommit the resource blocks to provision the infrastructure
 
 
 variable "ARM_CLIENT_ID" {
