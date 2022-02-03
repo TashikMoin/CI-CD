@@ -1,5 +1,5 @@
 # CICD
-# Terreform
+# Terraform
 # .NET5
 # Docker
 # Azure DevOps
